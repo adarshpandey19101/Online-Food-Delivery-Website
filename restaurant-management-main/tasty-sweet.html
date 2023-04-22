@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        /* Container for pizza boxes */
+        
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        /* Pizza box */
+        
+        .box {
+            width: 250px;
+            background-color: #f8f8f8;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        /* Pizza image */
+        
+        .image {
+            width: 100%;
+            max-height: 200px;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+        /* Pizza icon */
+        
+        .content img {
+            width: 40px;
+            height: 40px;
+            margin-bottom: 10px;
+        }
+        /* Pizza title */
+        
+        h3 {
+            margin-top: 0;
+            font-size: 20px;
+            font-weight: bold;
+            color: #333;
+        }
+        /* Pizza description */
+        
+        p {
+            font-size: 14px;
+            color: #777;
+        }
+        /* Heading style */
+        
+        .heading {
+            text-align: center;
+            font-size: 30px;
+            margin-top: 50px;
+            margin-bottom: 30px;
+        }
+        /* Responsive design for small screens */
+        
+        @media (max-width: 767px) {
+            .box {
+                width: 100%;
+                max-width: 400px;
+            }
+        }
+        
+        .btn {
+            display: block;
+            width: 100%;
+            text-align: center;
+            padding: 0.75rem;
+            background-color: #ff6f00;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            margin-top: 0.5rem;
+        }
+        
+        @media (max-width: 768px) {
+            .burger-item {
+                width: 100%;
+            }
+        }
+        /* Order Section Style */
+        
+        .order {
+            padding: 4rem;
+            background-color: #ff6f00;
+            color: #fff;
+        }
+        
+        .heading {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+        }
+        
+        .heading span {
+            border-bottom: 3px solid #fff;
+            padding-bottom: 0.5rem;
+        }
+        
+        .row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+        }
+        
+        .image img {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        form {
+            flex: 1;
+        }
+        
+        .inputBox {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+        
+        input[type="text"],
+        input[type="email"],
+        input[type="number"] {
+            padding: 0.5rem;
+            border: none;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: #fff;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        
+        textarea {
+            padding: 0.5rem;
+            border: none;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: #fff;
+            border-radius: 5px;
+            font-size: 1rem;
+            resize: none;
+            height: 100px;
+        }
+        
+        input[type="submit"] {
+            display: block;
+            width: 100%;
+            text-align: center;
+            padding: 0.75rem;
+            background-color: #fff;
+            color: #ff6f00;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            margin-top: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        input[type="submit"]:hover {
+            background-color: #ff6f00;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="speciality" id="speciality">
+
+        <h1 class="heading">our <span>speciality</span></h1>
+
+        <div class="box">
+            <img class="image" src="icon2/CCC.jpg" alt="">
+            <div class="content">
+                <h3>chocolate chip cookies</h3>
+                <p>To make delicious chocolate chip cookies, start with high-quality ingredients such as butter, sugar, flour, eggs, and chocolate chips. Follow a trusted recipe carefully, mixing the ingredients together, and then drop spoonfuls of dough
+                    onto a baking sheet. Bake in a preheated oven until golden brown, and let them cool before enjoying the soft and chewy cookies!</p>
+                <a href="#order" class="btn">Order Now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img class="image" src="icon2/RM.jpg" alt="">
+            <div class="content">
+                <h3>raspberry macarons</h3>
+                <p>For scrumptious raspberry macarons, gather almond flour, powdered sugar, egg whites, granulated sugar, and raspberry jam. Follow a reliable macaron recipe, mixing the dry and wet ingredients separately, and then folding them together.
+                    Pipe small circles onto a baking sheet, and bake in a low-temperature oven until they develop a delicate crust. Fill with raspberry jam and enjoy the irresistible sweet and tangy flavors!</p>
+                <a href="#order" class="btn">Order Now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img class="image" src="icon2/VAC.jpg" alt="">
+            <div class="content">
+                <h3>vanilla cupcakes</h3>
+                <p>Indulge in fluffy and moist vanilla cupcakes by gathering all-purpose flour, baking powder, sugar, butter, eggs, milk, and vanilla extract. Mix the dry and wet ingredients separately, and then combine them until smooth. Scoop the batter
+                    into cupcake liners and bake in a preheated oven until a toothpick inserted in the center comes out clean. Top with vanilla frosting and colorful sprinkles for a delightful treat!</p>
+                <a href="#order" class="btn">Order Now</a>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+    <section class="order" id="order">
+
+        <h1 class="heading"><span> order </span>now</h1>
+
+        <div class="row">
+            <div class="image">
+                <img src="icons/order-img.png" alt="">
+            </div>
+            <form action="confirmation.html" method="get">
+                <div class="inputBox">
+                    <input type="text" placeholder="name">
+                    <input type="email" placeholder="email">
+                </div>
+
+                <div class="inputBox">
+                    <input type="number" placeholder="number">
+                    <input type="text" placeholder="foodname">
+                </div>
+
+                <textarea placeholder="address" name="" id="" cols="30" rows="10"></textarea>
+
+                <input type="submit" value="order now" class="btn">
+
+
+            </form>
+
+        </div>
+
+
+
+    </section>
+</body>
+
+</html>

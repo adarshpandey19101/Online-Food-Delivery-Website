@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        /* Container for pizza boxes */
+        
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        /* Pizza box */
+        
+        .box {
+            width: 250px;
+            background-color: #f8f8f8;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        /* Pizza image */
+        
+        .image {
+            width: 100%;
+            max-height: 200px;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+        /* Pizza icon */
+        
+        .content img {
+            width: 40px;
+            height: 40px;
+            margin-bottom: 10px;
+        }
+        /* Pizza title */
+        
+        h3 {
+            margin-top: 0;
+            font-size: 20px;
+            font-weight: bold;
+            color: #333;
+        }
+        /* Pizza description */
+        
+        p {
+            font-size: 14px;
+            color: #777;
+        }
+        /* Heading style */
+        
+        .heading {
+            text-align: center;
+            font-size: 30px;
+            margin-top: 50px;
+            margin-bottom: 30px;
+        }
+        /* Responsive design for small screens */
+        
+        @media (max-width: 767px) {
+            .box {
+                width: 100%;
+                max-width: 400px;
+            }
+        }
+        
+        .btn {
+            display: block;
+            width: 100%;
+            text-align: center;
+            padding: 0.75rem;
+            background-color: #ff6f00;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            margin-top: 0.5rem;
+        }
+        
+        @media (max-width: 768px) {
+            .burger-item {
+                width: 100%;
+            }
+        }
+        /* Order Section Style */
+        
+        .order {
+            padding: 4rem;
+            background-color: #ff6f00;
+            color: #fff;
+        }
+        
+        .heading {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+        }
+        
+        .heading span {
+            border-bottom: 3px solid #fff;
+            padding-bottom: 0.5rem;
+        }
+        
+        .row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+        }
+        
+        .image img {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        form {
+            flex: 1;
+        }
+        
+        .inputBox {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+        
+        input[type="text"],
+        input[type="email"],
+        input[type="number"] {
+            padding: 0.5rem;
+            border: none;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: #fff;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        
+        textarea {
+            padding: 0.5rem;
+            border: none;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: #fff;
+            border-radius: 5px;
+            font-size: 1rem;
+            resize: none;
+            height: 100px;
+        }
+        
+        input[type="submit"] {
+            display: block;
+            width: 100%;
+            text-align: center;
+            padding: 0.75rem;
+            background-color: #fff;
+            color: #ff6f00;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            margin-top: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        input[type="submit"]:hover {
+            background-color: #ff6f00;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 class="heading">our <span>speciality</span></h1>
+
+    <div class="box">
+        <img class="image" src="icon2/VIC.jpg" alt="">
+        <div class="content">
+            <h3>Vanilla Ice Cream</h3>
+            <p>Vanilla ice cream is a classic flavor that's loved by many. It's made with real vanilla extract and has a smooth, creamy texture. Enjoy it on its own or as a base for adding your favorite toppings and mix-ins.</p>
+            <a href="#order" class="btn">Order Now</a>
+        </div>
+    </div>
+
+    <div class="box">
+        <img class="image" src="icon2/CIC.jpg" alt="">
+        <div class="content">
+            <h3>Chocolate Ice Cream</h3>
+            <p>Chocolate ice cream is a rich and indulgent treat for chocolate lovers. It's made with cocoa powder or melted chocolate, and it has a deep, intense chocolate flavor. Pair it with chocolate chips, fudge, or brownie chunks for a chocolate lover's
+                dream.
+            </p>
+            <a href="#order" class="btn">Order Now</a>
+        </div>
+    </div>
+
+    <div class="box">
+        <img class="image" src="icon2/SIC.jpg" alt="">
+        <div class="content">
+            <h3>Strawberry Ice Cream</h3>
+            <p>Strawberry ice cream is a refreshing and fruity option for those who enjoy the taste of fresh strawberries. It's made with real strawberries and has a light, sweet flavor. Add some strawberry chunks or a swirl of strawberry sauce for an extra
+                burst of strawberry goodness.</p>
+            <a href="#order" class="btn">Order Now</a>
+        </div>
+    </div>
+
+    <div class="box">
+        <img class="image" src="icon2/MIC.jpg" alt="">
+        <div class="content">
+            <h3>Mint Chocolate Chip Ice Cream</h3>
+            <p>Mint chocolate chip ice cream is a unique and refreshing flavor that's perfect for mint lovers. It's made with fresh mint leaves and studded with chocolate chips for a cool and creamy treat with a hint of chocolate crunch.</p>
+            <a href="#order" class="btn">Order Now</a>
+        </div>
+
+    </div>
+
+    <section class="order" id="order">
+
+        <h1 class="heading"><span> order </span>now</h1>
+
+        <div class="row">
+            <div class="image">
+                <img src="icons/order-img.png" alt="">
+            </div>
+            <form action="confirmation.html" method="get">
+                <div class="inputBox">
+                    <input type="text" placeholder="name">
+                    <input type="email" placeholder="email">
+                </div>
+
+                <div class="inputBox">
+                    <input type="number" placeholder="number">
+                    <input type="text" placeholder="foodname">
+                </div>
+
+                <textarea placeholder="address" name="" id="" cols="30" rows="10"></textarea>
+
+                <input type="submit" value="order now" class="btn">
+
+
+            </form>
+
+        </div>
+
+
+
+    </section>
+</body>
+
+</html>

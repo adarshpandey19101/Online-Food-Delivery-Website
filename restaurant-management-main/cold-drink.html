@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        /* Container for pizza boxes */
+        
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        /* Pizza box */
+        
+        .box {
+            width: 250px;
+            background-color: #f8f8f8;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        /* Pizza image */
+        
+        .image {
+            width: 100%;
+            max-height: 200px;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+        /* Pizza icon */
+        
+        .content img {
+            width: 40px;
+            height: 40px;
+            margin-bottom: 10px;
+        }
+        /* Pizza title */
+        
+        h3 {
+            margin-top: 0;
+            font-size: 20px;
+            font-weight: bold;
+            color: #333;
+        }
+        /* Pizza description */
+        
+        p {
+            font-size: 14px;
+            color: #777;
+        }
+        /* Heading style */
+        
+        .heading {
+            text-align: center;
+            font-size: 30px;
+            margin-top: 50px;
+            margin-bottom: 30px;
+        }
+        /* Responsive design for small screens */
+        
+        @media (max-width: 767px) {
+            .box {
+                width: 100%;
+                max-width: 400px;
+            }
+        }
+        
+        .btn {
+            display: block;
+            width: 100%;
+            text-align: center;
+            padding: 0.75rem;
+            background-color: #ff6f00;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            margin-top: 0.5rem;
+        }
+        
+        @media (max-width: 768px) {
+            .burger-item {
+                width: 100%;
+            }
+        }
+        /* Order Section Style */
+        
+        .order {
+            padding: 4rem;
+            background-color: #ff6f00;
+            color: #fff;
+        }
+        
+        .heading {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+        }
+        
+        .heading span {
+            border-bottom: 3px solid #fff;
+            padding-bottom: 0.5rem;
+        }
+        
+        .row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+        }
+        
+        .image img {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        form {
+            flex: 1;
+        }
+        
+        .inputBox {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+        
+        input[type="text"],
+        input[type="email"],
+        input[type="number"] {
+            padding: 0.5rem;
+            border: none;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: #fff;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        
+        textarea {
+            padding: 0.5rem;
+            border: none;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: #fff;
+            border-radius: 5px;
+            font-size: 1rem;
+            resize: none;
+            height: 100px;
+        }
+        
+        input[type="submit"] {
+            display: block;
+            width: 100%;
+            text-align: center;
+            padding: 0.75rem;
+            background-color: #fff;
+            color: #ff6f00;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            margin-top: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        input[type="submit"]:hover {
+            background-color: #ff6f00;
+            color: #fff;
+        }
+    </style>
+</head>
+<div class="container">
+    <h1 class="heading">Our <span>Specialty</span></h1>
+    <div class="box">
+        <img class="image" src="icon2/SL.jpg" alt="">
+        <div class="content">
+            <h3>Sparkling Lemonade</h3>
+            <p>Sparkling lemonade is a refreshing and fizzy cold drink made with freshly squeezed lemon juice, carbonated water, and sweetener. It's perfect for hot summer days, and you can garnish it with a lemon slice for added visual appeal.</p>
+            <a href="#order" class="btn">Order Now</a>
+        </div>
+    </div>
+    <div class="box">
+        <img class="image" src="icon2/IT.jpg" alt="">
+        <div class="content">
+            <h3>Iced Tea</h3>
+            <p>Iced tea is a classic cold drink made by brewing tea leaves and then chilling it with ice. You can choose from various tea flavors like black tea, green tea, or herbal tea, and add sweeteners or lemon slices according to your taste preferences.</p>
+            <a href="#order" class="btn">Order Now</a>
+        </div>
+    </div>
+    <div class="box">
+        <img class="image" src="icon2/WS.jpg" alt="">
+        <div class="content">
+            <h3>Watermelon Slush</h3>
+            <p>Watermelon slush is a refreshing and fruity cold drink made by blending watermelon chunks with ice and a little sugar. It's a perfect option for a hot day, and you can also add mint leaves or lime juice for an extra burst of flavor.</p>
+            <a href="#order" class="btn">Order Now</a>
+        </div>
+    </div>
+    <div class="box">
+        <img class="image" src="icon2/CC.jpg" alt="">
+        <div class="content">
+            <h3>Cold Coffee</h3>
+            <p>Cold coffee is a popular cold drink made with brewed coffee, milk, ice, and sweeteners like sugar or syrup. It's a perfect choice for coffee lovers who want a refreshing and chilled version of their favorite beverage, and you can also add
+                whipped cream or chocolate shavings for extra indulgence.</p>
+            <a href="#order" class="btn">Order Now</a>
+        </div>
+    </div>
+</div>
+
+
+
+
+<section class="order" id="order">
+
+    <h1 class="heading"><span> order </span>now</h1>
+
+    <div class="row">
+        <div class="image">
+            <img src="icons/order-img.png" alt="">
+        </div>
+        <form action="confirmation.html" method="get">
+            <div class="inputBox">
+                <input type="text" placeholder="name">
+                <input type="email" placeholder="email">
+            </div>
+
+            <div class="inputBox">
+                <input type="number" placeholder="number">
+                <input type="text" placeholder="foodname">
+            </div>
+
+            <textarea placeholder="address" name="" id="" cols="30" rows="10"></textarea>
+
+            <input type="submit" value="order now" class="btn">
+
+
+        </form>
+
+    </div>
+
+
+
+</section>
+</body>
+
+</html>
